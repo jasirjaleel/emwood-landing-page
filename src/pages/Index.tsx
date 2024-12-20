@@ -16,46 +16,71 @@ const Index = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className="min-h-screen bg-neutral-cream">
+    <div className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section className="min-h-screen relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/lovable-uploads/57921786-ea7c-43c4-b279-c4ccd2e0ecd6.png"
             alt="Interior Design"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-neutral-cream/80 to-neutral-cream/95" />
+          <div className="absolute inset-0 bg-black/30" />
         </div>
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 animate-fade-up">
-            Dream, develop,{" "}
-            <span className="text-brand-primary font-normal">decor.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            At EMWOODS, we turn your dreams into reality. From the initial spark of inspiration to the final touches that bring your space to life.
-          </p>
+        <div className="relative z-10 h-screen flex items-center">
+          <div className="container mx-auto px-4">
+            <h1 className="text-6xl md:text-8xl font-light text-white mb-6 animate-fade-up max-w-4xl">
+              Contemporary Living Spaces
+            </h1>
+            <p className="text-xl text-white/90 max-w-2xl animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              At EMWOODS, we turn your dreams into reality. From the initial spark of inspiration to the final touches that bring your space to life.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="animate-on-scroll opacity-0">
+              <div className="text-5xl font-light mb-2">500+</div>
+              <div className="text-gray-600">Projects Completed</div>
+            </div>
+            <div className="animate-on-scroll opacity-0">
+              <div className="text-5xl font-light mb-2">20+</div>
+              <div className="text-gray-600">Expert Designers</div>
+            </div>
+            <div className="animate-on-scroll opacity-0">
+              <div className="text-5xl font-light mb-2">50+</div>
+              <div className="text-gray-600">Awards Won</div>
+            </div>
+            <div className="animate-on-scroll opacity-0">
+              <div className="text-5xl font-light mb-2">15+</div>
+              <div className="text-gray-600">Years Experience</div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-neutral-cream">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-light mb-8 animate-on-scroll opacity-0">
-              About <span className="text-brand-primary">us</span>
+          <div className="max-w-3xl">
+            <h2 className="text-4xl md:text-5xl font-light mb-8 animate-on-scroll opacity-0">
+              Modern Style, <br />Timeless Charm
             </h2>
-            <p className="text-gray-600 mb-6 animate-on-scroll opacity-0">
-              At EMWOODS, we believe that the essence of a home lies in its details, and nothing speaks to warmth and elegance like the timeless appeal of wood. Rooted in a passion for craftsmanship, EMWOODS has emerged as a trusted name in the wooden interior sector, transforming spaces with our exquisite range of products.
+            <p className="text-lg text-gray-600 mb-6 animate-on-scroll opacity-0">
+              At EMWOODS, we believe that the essence of a home lies in its details, and nothing speaks to warmth and elegance like the timeless appeal of wood. Rooted in a passion for craftsmanship, EMWOODS has emerged as a trusted name in the wooden interior sector.
             </p>
-            <p className="text-gray-600 animate-on-scroll opacity-0">
+            <p className="text-lg text-gray-600 animate-on-scroll opacity-0">
               From classic designs to contemporary styles, our collections are curated with an eye for quality and sustainability. With a deep commitment to excellence, we work closely with our clients to bring their dreams to life.
             </p>
           </div>
@@ -63,10 +88,10 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-neutral-cream">
+      <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-light mb-12 text-center animate-on-scroll opacity-0">
-            Our <span className="text-brand-primary">services</span>
+          <h2 className="text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">
+            Explore Our Proudly Collection
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
@@ -81,11 +106,19 @@ const Index = () => {
             ].map((service, index) => (
               <div
                 key={service}
-                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 animate-on-scroll opacity-0"
+                className="group relative overflow-hidden aspect-square animate-on-scroll opacity-0"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h3 className="text-xl font-medium mb-2">{service}</h3>
-                <ArrowRight className="text-brand-primary mt-4" />
+                <img
+                  src="/lovable-uploads/57921786-ea7c-43c4-b279-c4ccd2e0ecd6.png"
+                  alt={service}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:opacity-70" />
+                <div className="absolute bottom-0 left-0 p-6 text-white">
+                  <h3 className="text-xl font-light mb-2">{service}</h3>
+                  <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
+                </div>
               </div>
             ))}
           </div>
@@ -93,12 +126,12 @@ const Index = () => {
       </section>
 
       {/* Process Section */}
-      <section id="process" className="py-20 bg-white">
+      <section id="process" className="py-20 bg-neutral-cream">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-light mb-12 text-center animate-on-scroll opacity-0">
-            Our <span className="text-brand-primary">process</span>
+          <h2 className="text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">
+            Our Process
           </h2>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto space-y-12">
             {[
               {
                 title: "Consultation",
@@ -123,11 +156,14 @@ const Index = () => {
             ].map((step, index) => (
               <div
                 key={step.title}
-                className="mb-8 last:mb-0 animate-on-scroll opacity-0"
+                className="flex gap-8 items-start animate-on-scroll opacity-0"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h3 className="text-xl font-medium mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <span className="text-4xl font-light text-brand-primary">0{index + 1}</span>
+                <div>
+                  <h3 className="text-2xl font-light mb-2">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -135,34 +171,34 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-neutral-cream">
+      <section id="contact" className="py-20 bg-neutral-dark text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-light mb-12 text-center animate-on-scroll opacity-0">
-            Contact <span className="text-brand-primary">us</span>
+          <h2 className="text-4xl md:text-5xl font-light mb-12 text-center animate-on-scroll opacity-0">
+            Engage with Us in Conversation
           </h2>
-          <div className="max-w-4xl mx-auto bg-white/80 backdrop-blur-md p-8 rounded-lg shadow-sm">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="space-y-8">
+                <div className="flex items-center space-x-4 animate-on-scroll opacity-0">
                   <Phone className="text-brand-primary" />
                   <span>+91 95 62 4203 59</span>
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 animate-on-scroll opacity-0">
                   <Mail className="text-brand-primary" />
-                  <span>emwoods@gmai.com</span>
+                  <span>emwoods@gmail.com</span>
                 </div>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 animate-on-scroll opacity-0">
                   <MapPin className="text-brand-primary" />
                   <span>Chentrappinni, Thrissur</span>
                 </div>
               </div>
-              <div>
+              <div className="animate-on-scroll opacity-0">
                 <img
                   src="/lovable-uploads/6aba4b4e-7f2e-4fea-96ec-7e34abec2cf0.png"
                   alt="EMWOODS"
-                  className="h-16 mb-4"
+                  className="h-16 mb-4 invert"
                 />
-                <p className="text-gray-600">
+                <p className="text-gray-400">
                   Transform your space with EMWOODS. Contact us today to begin your journey towards exceptional interior design.
                 </p>
               </div>

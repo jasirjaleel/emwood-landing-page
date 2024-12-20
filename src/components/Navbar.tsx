@@ -23,26 +23,30 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-2">
             <img
               src="/lovable-uploads/6aba4b4e-7f2e-4fea-96ec-7e34abec2cf0.png"
               alt="EMWOODS"
-              className="h-12"
+              className={`h-12 transition-all duration-300 ${
+                isScrolled ? "" : "invert"
+              }`}
             />
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-12">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-brand-primary transition-colors duration-300"
+                className={`text-sm tracking-wide hover:text-brand-primary transition-colors duration-300 ${
+                  isScrolled ? "text-gray-900" : "text-white"
+                }`}
               >
                 {link.name}
               </a>
@@ -51,7 +55,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700"
+            className={`md:hidden ${isScrolled ? "text-gray-900" : "text-white"}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -60,12 +64,12 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white/90 backdrop-blur-md shadow-lg py-4">
+          <div className="md:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md shadow-lg py-4">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-4 py-2 text-gray-700 hover:text-brand-primary hover:bg-gray-50"
+                className="block px-4 py-2 text-gray-900 hover:text-brand-primary hover:bg-gray-50"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}

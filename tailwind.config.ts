@@ -27,6 +27,7 @@ export default {
         neutral: {
           cream: "#F5F0EB",
           sand: "#E5DCD3",
+          dark: "#2C2C2C",
         },
       },
       keyframes: {
