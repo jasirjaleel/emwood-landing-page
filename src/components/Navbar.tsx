@@ -28,14 +28,21 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
-          <a href="#" className="flex items-center space-x-2">
+          <a href="#" className="flex items-center space-x-3">
             <img
-              src="/lovable-uploads/6aba4b4e-7f2e-4fea-96ec-7e34abec2cf0.png"
-              alt="EMWOODS"
-              className={`h-12 transition-all duration-300 ${
+              src="/lovable-uploads/57f2dcdc-ad88-4513-953c-2286e8f3a724.png"
+              alt="EMWOODS Logo"
+              className={`h-8 transition-all duration-300 ${
                 isScrolled ? "" : "invert"
               }`}
             />
+            <span 
+              className={`font-display text-2xl tracking-wider transition-all duration-300 ${
+                isScrolled ? "text-gray-900" : "text-white"
+              }`}
+            >
+              EMWOODS
+            </span>
           </a>
 
           {/* Desktop Navigation */}
