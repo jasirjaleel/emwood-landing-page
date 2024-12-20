@@ -8,7 +8,11 @@
   }
   
   body {
-    @apply bg-neutral-cream text-gray-900 antialiased;
+    @apply bg-neutral-cream text-gray-900 antialiased font-light;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
   }
 }
 
