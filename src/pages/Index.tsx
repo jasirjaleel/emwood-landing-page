@@ -158,7 +158,7 @@ const Index = () => {
               </div>
               <div>
                 <img
-                  src="/lovable-uploads/c6b90cf1-69b3-4b4e-9452-e315f6fd0945.png"
+                  src="/lovable-uploads/6aba4b4e-7f2e-4fea-96ec-7e34abec2cf0.png"
                   alt="EMWOODS"
                   className="h-16 mb-4"
                 />
