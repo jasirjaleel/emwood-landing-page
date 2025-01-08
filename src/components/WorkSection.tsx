@@ -6,21 +6,6 @@ const WorkSection = () => {
       title: "Modern Villa Interior",
       category: "Residential",
       image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200"
-    },
-    {
-      title: "Luxury Office Space",
-      category: "Commercial",
-      image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200"
-    },
-    {
-      title: "Contemporary Home",
-      category: "Residential",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200"
-    },
-    {
-      title: "Restaurant Design",
-      category: "Commercial",
-      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200"
     }
   ];
 
@@ -47,6 +32,19 @@ const WorkSection = () => {
                 <span className="text-sm uppercase tracking-wider mb-2 block">{project.category}</span>
                 <h3 className="font-display text-xl font-light mb-2">{project.title}</h3>
                 <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
+              </div>
+            </div>
+          ))}
+          
+          {/* Coming Soon Placeholders */}
+          {[1, 2, 3].map((_, index) => (
+            <div
+              key={`coming-soon-${index}`}
+              className="group relative overflow-hidden aspect-[4/3] animate-on-scroll opacity-0 bg-neutral-cream"
+              style={{ animationDelay: `${(index + 1) * 0.1}s` }}
+            >
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-2xl font-display text-neutral-dark/50">Coming Soon</span>
               </div>
             </div>
           ))}
