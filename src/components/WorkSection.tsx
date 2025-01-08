@@ -1,11 +1,13 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const WorkSection = () => {
   const projects = [
     {
       title: "Modern Villa Interior",
       category: "Residential",
-      image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200"
+      image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200",
+      slug: "modern-villa"
     }
   ];
 
@@ -17,7 +19,8 @@ const WorkSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div
+            <Link
+              to={`/project/${project.slug}`}
               key={project.title}
               className="group relative overflow-hidden aspect-[4/3] animate-on-scroll opacity-0"
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -33,7 +36,7 @@ const WorkSection = () => {
                 <h3 className="font-display text-xl font-light mb-2">{project.title}</h3>
                 <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
               </div>
-            </div>
+            </Link>
           ))}
           
           {/* Coming Soon Placeholders */}
