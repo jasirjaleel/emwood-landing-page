@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import WorkSection from "@/components/WorkSection";
-import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Phone, Mail, MapPin, Instagram } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
@@ -199,41 +200,8 @@ const Index = () => {
       <WorkSection />
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-neutral-dark text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-light mb-12 text-center animate-on-scroll opacity-0">
-            Engage with Us in Conversation
-          </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div className="space-y-8">
-                <div className="flex items-center space-x-4 animate-on-scroll opacity-0">
-                  <Phone className="text-brand-primary" />
-                  <span>+91 95 62 4203 59</span>
-                </div>
-                <div className="flex items-center space-x-4 animate-on-scroll opacity-0">
-                  <Mail className="text-brand-primary" />
-                  <span>emwoods@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-4 animate-on-scroll opacity-0">
-                  <MapPin className="text-brand-primary" />
-                  <span>Chentrappinni, Thrissur</span>
-                </div>
-              </div>
-              <div className="animate-on-scroll opacity-0">
-                <img
-                  src="/lovable-uploads/6aba4b4e-7f2e-4fea-96ec-7e34abec2cf0.png"
-                  alt="EMWOODS"
-                  className="h-16 mb-4 invert"
-                />
-                <p className="text-gray-400">
-                  Transform your space with EMWOODS. Contact us today to begin your journey towards exceptional interior design.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
+
     </div>
   );
 };
