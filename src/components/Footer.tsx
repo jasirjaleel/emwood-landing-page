@@ -10,7 +10,7 @@ const Footer = () => {
             <h3 className="text-2xl font-display font-light mb-6">Contact Us</h3>
             <div className="flex items-center space-x-4">
               <Phone className="text-brand-primary" size={20} />
-              <span>+91 95 62 4203 59</span>
+              <a href="tel:+919562420359" className="hover:text-brand-primary transition-colors">+91 95 62 4203 59</a>
             </div>
             <div className="flex items-center space-x-4">
               <Mail className="text-brand-primary" size={20} />
