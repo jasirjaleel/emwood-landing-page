@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import WorkSection from "@/components/WorkSection";
 import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 
 const Index = () => {
@@ -193,6 +194,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Work Section */}
+      <WorkSection />
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-neutral-dark text-white">
