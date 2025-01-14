@@ -51,19 +51,19 @@ const Index = () => {
       {/* Statistics Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
             <div className="animate-on-scroll opacity-0">
-              <div className="text-5xl font-light mb-2">500+</div>
+              <div className="text-5xl font-light mb-2">100+</div>
               <div className="text-gray-600">Projects Completed</div>
             </div>
             <div className="animate-on-scroll opacity-0">
               <div className="text-5xl font-light mb-2">20+</div>
-              <div className="text-gray-600">Expert Designers</div>
+              <div className="text-gray-600">Expert Designes</div>
             </div>
-            <div className="animate-on-scroll opacity-0">
+            {/* <div className="animate-on-scroll opacity-0">
               <div className="text-5xl font-light mb-2">50+</div>
               <div className="text-gray-600">Awards Won</div>
-            </div>
+            </div> */}
             <div className="animate-on-scroll opacity-0">
               <div className="text-5xl font-light mb-2">15+</div>
               <div className="text-gray-600">Years Experience</div>
@@ -92,9 +92,7 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">
-            Explore Our Proudly Collection
-          </h2>
+          <h2 className="font-display text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
