@@ -108,7 +108,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-4 animate-on-scroll opacity-0">
               <img
-                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                src="/lovable-uploads/1ebc95f6-bf61-4f87-b4ac-89d029254bf8.png"
                 alt="Wooden Panneling"
                 className="w-full aspect-square object-cover"
                 loading="lazy"
@@ -117,7 +117,7 @@ const Index = () => {
             </div>
             <div className="space-y-4 animate-on-scroll opacity-0">
               <img
-                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                src="/lovable-uploads/af3d9a13-4590-48cb-a2b2-f9e796874668.png"
                 alt="Wooden Wardrobses"
                 className="w-full aspect-square object-cover"
                 loading="lazy"
@@ -126,7 +126,7 @@ const Index = () => {
             </div>
             <div className="space-y-4 animate-on-scroll opacity-0">
               <img
-                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                src="/lovable-uploads/7e86397f-7ac8-410a-b04f-4de74d8428db.png"
                 alt="Wooden Flooring"
                 className="w-full aspect-square object-cover"
                 loading="lazy"
@@ -135,7 +135,7 @@ const Index = () => {
             </div>
             <div className="space-y-4 animate-on-scroll opacity-0">
               <img
-                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                src="/lovable-uploads/038e46a6-e8b8-417f-a256-46de3ef141c9.png"
                 alt="Custom Doors & Windows"
                 className="w-full aspect-square object-cover"
                 loading="lazy"

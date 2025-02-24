@@ -1,13 +1,32 @@
+
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const WorkSection = () => {
   const projects = [
     {
-      title: "Modern Villa Interior",
+      title: "Luxury Villa Interior",
       category: "Residential",
-      image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200",
+      image: "/lovable-uploads/4864b2ce-baa1-440f-a436-fabb00aa1ee5.png",
       slug: "modern-villa"
+    },
+    {
+      title: "Modern Staircase",
+      category: "Interior",
+      image: "/lovable-uploads/68691944-df17-4438-9a10-bffe40b0a7be.png",
+      slug: "modern-staircase"
+    },
+    {
+      title: "Contemporary Design",
+      category: "Residential",
+      image: "/lovable-uploads/1036c223-a137-40d6-9aba-4ce1b9d3570f.png",
+      slug: "contemporary-design"
+    },
+    {
+      title: "Elegant Stairway",
+      category: "Interior",
+      image: "/lovable-uploads/e8d269a3-ff02-4038-8703-31d1b6ab1a7f.png",
+      slug: "elegant-stairway"
     }
   ];
 
@@ -37,19 +56,6 @@ const WorkSection = () => {
                 <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
               </div>
             </Link>
-          ))}
-          
-          {/* Coming Soon Placeholders */}
-          {[1, 2, 3].map((_, index) => (
-            <div
-              key={`coming-soon-${index}`}
-              className="group relative overflow-hidden aspect-[4/3] animate-on-scroll opacity-0 bg-neutral-cream"
-              style={{ animationDelay: `${(index + 1) * 0.1}s` }}
-            >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-2xl font-display text-neutral-dark/50">Coming Soon</span>
-              </div>
-            </div>
           ))}
         </div>
       </div>
