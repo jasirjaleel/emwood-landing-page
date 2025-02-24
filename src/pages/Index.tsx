@@ -17,9 +17,20 @@ const Index = () => {
       });
     };
 
-    window.addEventListener("scroll", handleScroll);
+    let ticking = false;
+    const scrollHandler = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", scrollHandler, { passive: true });
     handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 
   return (
@@ -60,10 +71,6 @@ const Index = () => {
               <div className="text-5xl font-light mb-2">20+</div>
               <div className="text-gray-600">Expert Designes</div>
             </div>
-            {/* <div className="animate-on-scroll opacity-0">
-              <div className="text-5xl font-light mb-2">50+</div>
-              <div className="text-gray-600">Awards Won</div>
-            </div> */}
             <div className="animate-on-scroll opacity-0">
               <div className="text-5xl font-light mb-2">15+</div>
               <div className="text-gray-600">Years Experience</div>
@@ -92,59 +99,52 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Interior work",
-                image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200"
-              },
-              {
-                title: "Custom wooden furniture",
-                image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
-              },
-              {
-                title: "Wooden Flooring",
-                image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1200"
-              },
-              {
-                title: "Doors & windows",
-                image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200"
-              },
-              {
-                title: "Wooden Wall Cladding",
-                image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=1200"
-              },
-              {
-                title: "Wall pannelling",
-                image: "https://images.unsplash.com/photo-1616486701797-0f33f61038ec?q=80&w=1200"
-              },
-              {
-                title: "Doom works",
-                image: "https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?q=80&w=1200"
-              },
-              {
-                title: "Custom wooden stairs",
-                image: "https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?q=80&w=1200"
-              },
-            ].map(({ title, image }, index) => (
-              <div
-                key={title}
-                className="group relative overflow-hidden aspect-square animate-on-scroll opacity-0"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <img
-                  src={image}
-                  alt={title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:opacity-70" />
-                <div className="absolute bottom-0 left-0 p-6 text-white">
-                  <h3 className="font-display text-xl font-light mb-2">{title}</h3>
-                  <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
-                </div>
-              </div>
-            ))}
+          <h2 className="font-display text-6xl md:text-7xl text-neutral-dark font-light mb-12 animate-on-scroll opacity-0">
+            OUR SERVICES
+          </h2>
+          <h3 className="text-3xl md:text-4xl text-brand-primary mb-12 animate-on-scroll opacity-0">
+            COMPLETE CUSTOMIZATION OF WOODEN INTERIOR
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="space-y-4 animate-on-scroll opacity-0">
+              <img
+                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                alt="Wooden Panneling"
+                className="w-full aspect-square object-cover"
+                loading="lazy"
+              />
+              <h4 className="text-xl font-light">WOODEN PANNELING</h4>
+            </div>
+            <div className="space-y-4 animate-on-scroll opacity-0">
+              <img
+                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                alt="Wooden Wardrobses"
+                className="w-full aspect-square object-cover"
+                loading="lazy"
+              />
+              <h4 className="text-xl font-light">WOODEN WARDROBSES</h4>
+            </div>
+            <div className="space-y-4 animate-on-scroll opacity-0">
+              <img
+                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                alt="Wooden Flooring"
+                className="w-full aspect-square object-cover"
+                loading="lazy"
+              />
+              <h4 className="text-xl font-light">WOODEN FLOORING</h4>
+            </div>
+            <div className="space-y-4 animate-on-scroll opacity-0">
+              <img
+                src="/lovable-uploads/61088f1d-02aa-401f-8e3e-5194307fd746.png"
+                alt="Custom Doors & Windows"
+                className="w-full aspect-square object-cover"
+                loading="lazy"
+              />
+              <h4 className="text-xl font-light">CUSTOM DOORS & WINDOWS</h4>
+            </div>
+          </div>
+          <div className="mt-16 text-2xl text-brand-primary animate-on-scroll opacity-0">
+            TREATED & NON-TREATED WOODS
           </div>
         </div>
       </section>
@@ -196,6 +196,20 @@ const Index = () => {
 
       {/* Work Section */}
       <WorkSection />
+
+      {/* Vision Section */}
+      <section className="py-20 bg-neutral-cream">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-6xl md:text-7xl text-neutral-dark font-light mb-12 animate-on-scroll opacity-0">
+            OUR VISION
+          </h2>
+          <div className="max-w-4xl">
+            <p className="text-xl leading-relaxed animate-on-scroll opacity-0">
+              Emwoods is not just a business—it's a movement. In a few years, this name will stand among the biggest brands in the industry. The craftsmanship, the passion, and the vision we bring will make Emwoods a symbol of excellence. Today, we build with our hands—but soon, the world will recognize our work. This is just the beginning
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Contact Section */}
       <Footer />
