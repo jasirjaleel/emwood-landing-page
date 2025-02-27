@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -31,19 +32,19 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-3">
             <img
-              src="/lovable-uploads/57f2dcdc-ad88-4513-953c-2286e8f3a724.png"
-              alt="EMWOODS Logo"
-              className={`h-8 transition-all duration-300 ${
-                isScrolled ? "" : "invert"
+              src="/lovable-uploads/2133a38d-e1e9-4eee-9ac2-c84f81e6bf03.png"
+              alt="EMWOODS Logo Symbol"
+              className={`h-10 transition-all duration-300 ${
+                isScrolled ? "brightness-100" : "brightness-0 invert"
               }`}
             />
-            <span 
-              className={`font-display text-2xl tracking-wider transition-all duration-300 ${
-                isScrolled ? "text-gray-900" : "text-white"
+            <img
+              src="/lovable-uploads/68aeffa9-909e-4fd1-a586-b537999b4b88.png"
+              alt="EMWOODS Logo Text"
+              className={`h-6 transition-all duration-300 ${
+                isScrolled ? "brightness-100" : "brightness-0 invert"
               }`}
-            >
-              EMWOODS
-            </span>
+            />
           </a>
 
           {/* Desktop Navigation */}
