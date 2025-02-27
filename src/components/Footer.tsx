@@ -67,7 +67,7 @@ const Footer = () => {
               <img
                 src="/lovable-uploads/68aeffa9-909e-4fd1-a586-b537999b4b88.png"
                 alt="EMWOODS Logo Text"
-                className="h-8 brightness-0 invert"
+                className="h-10 brightness-0 invert"
               />
             </div>
             <p className="text-gray-400 text-sm">

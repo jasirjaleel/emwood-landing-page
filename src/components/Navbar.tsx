@@ -41,7 +41,7 @@ const Navbar = () => {
             <img
               src="/lovable-uploads/68aeffa9-909e-4fd1-a586-b537999b4b88.png"
               alt="EMWOODS Logo Text"
-              className={`h-6 transition-all duration-300 ${
+              className={`h-8 transition-all duration-300 ${
                 isScrolled ? "brightness-100" : "brightness-0 invert"
               }`}
             />
