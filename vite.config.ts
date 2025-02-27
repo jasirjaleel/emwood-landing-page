@@ -1,3 +1,4 @@
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
@@ -18,5 +19,13 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: mode === "production" ? "/" : "/",  // Set base to "/" for custom domains like emwoods.jasir.online
+  base: "/",  // Set base to "/" for all environments
+  build: {
+    minify: "terser",
+    sourcemap: false,
+    chunkSizeWarningLimit: 1000,
+  },
+  optimizeDeps: {
+    exclude: ["lovable-tagger"]
+  },
 }));
