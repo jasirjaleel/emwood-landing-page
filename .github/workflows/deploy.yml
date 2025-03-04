@@ -1,3 +1,10 @@
+name: Deploy to Firebase  
+
+on:
+  push:
+    branches:
+      - production  # Triggers on push to the production branch
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
