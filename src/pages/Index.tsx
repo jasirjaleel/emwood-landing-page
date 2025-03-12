@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import WorkSection from "@/components/WorkSection";
@@ -7,7 +6,6 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
-    // Optimized scroll handler with debouncing
     const handleScroll = () => {
       const elements = document.querySelectorAll(".animate-on-scroll");
       elements.forEach((element) => {
@@ -19,7 +17,6 @@ const Index = () => {
       });
     };
 
-    // Use requestAnimationFrame for smoother performance
     let ticking = false;
     const scrollListener = () => {
       if (!ticking) {
@@ -33,7 +30,6 @@ const Index = () => {
 
     window.addEventListener("scroll", scrollListener, { passive: true });
     
-    // Run once on initial load
     handleScroll();
     
     return () => window.removeEventListener("scroll", scrollListener);
@@ -50,7 +46,9 @@ const Index = () => {
             src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2400"
             alt="Interior Design"
             className="w-full h-full object-cover"
-            loading="eager" // Load this image immediately as it's above the fold
+            loading="eager" 
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-black/30" />
         </div>
@@ -151,7 +149,7 @@ const Index = () => {
                   src={image}
                   alt={title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy" // Add lazy loading for images
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:opacity-70" />
                 <div className="absolute bottom-0 left-0 p-6 text-white">
