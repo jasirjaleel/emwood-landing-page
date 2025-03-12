@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
@@ -6,19 +5,20 @@ const Services = () => {
   const services = [
     {
       title: "Premium Wooden Flooring & Wall Paneling",
-      image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1200"
+      image: "public/photos/floor.jpg"
     },
     {
       title: "Custom Wooden Interiors & Furniture",
-      image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
+      image: "public/photos/wood_furniture_1.jpg"
     },
     {
       title: "Bespoke Wooden Doors & Windows",
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200"
+      image: "public/photos/wood_door_1.jpg"
     },
     {
       title: "Handcrafted Staircases & Railings",
-      image: "https://images.unsplash.com/photo-1616486701797-0f33f61038ec?q=80&w=1200"
+      image: "public/photos/wood_stairs_1.jpg"
+      
     },
     {
       title: "Wood Finishing & Restoration",
