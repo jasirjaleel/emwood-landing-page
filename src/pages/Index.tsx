@@ -1,8 +1,11 @@
+
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import WorkSection from "@/components/WorkSection";
+// Commenting out WorkSection as requested
+// import WorkSection from "@/components/WorkSection";
 import { ArrowRight, Phone, Mail, MapPin, Instagram } from "lucide-react";
 import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 
 const Index = () => {
   useEffect(() => {
@@ -84,7 +87,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Section */}
+      {/* About Section - Updated with new content */}
       <section id="about" className="py-20 bg-neutral-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
@@ -92,7 +95,7 @@ const Index = () => {
               Modern Style, <br />Timeless Charm
             </h2>
             <p className="text-lg text-gray-600 mb-6 animate-on-scroll opacity-0 font-light">
-              At EMWOODS, we believe that the essence of a home lies in its details, and nothing speaks to warmth and elegance like the timeless appeal of wood. Rooted in a passion for craftsmanship, EMWOODS has emerged as a trusted name in the wooden interior sector.
+              At EMWOODS, we create bespoke wooden interiors that blend artistry with functionality. Our handcrafted furniture and luxury designs transform spaces into elegant masterpieces.
             </p>
             <p className="text-lg text-gray-600 animate-on-scroll opacity-0 font-light">
               From classic designs to contemporary styles, our collections are curated with an eye for quality and sustainability. With a deep commitment to excellence, we work closely with our clients to bring their dreams to life.
@@ -101,44 +104,32 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Section - Updated with new services */}
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="font-display text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Interior work",
-                image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200"
-              },
-              {
-                title: "Custom wooden furniture",
-                image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
-              },
-              {
-                title: "Wooden Flooring",
+                title: "Premium Wooden Flooring & Wall Paneling",
                 image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=1200"
               },
               {
-                title: "Doors & windows",
+                title: "Custom Wooden Interiors & Furniture",
+                image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
+              },
+              {
+                title: "Bespoke Wooden Doors & Windows",
                 image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200"
               },
               {
-                title: "Wooden Wall Cladding",
-                image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=1200"
-              },
-              {
-                title: "Wall pannelling",
+                title: "Handcrafted Staircases & Railings",
                 image: "https://images.unsplash.com/photo-1616486701797-0f33f61038ec?q=80&w=1200"
               },
               {
-                title: "Doom works",
+                title: "Wood Finishing & Restoration",
                 image: "https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?q=80&w=1200"
-              },
-              {
-                title: "Custom wooden stairs",
-                image: "https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?q=80&w=1200"
-              },
+              }
             ].map(({ title, image }, index) => (
               <div
                 key={title}
@@ -207,8 +198,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Work Section */}
-      <WorkSection />
+      {/* Gallery Section - Replacing the commented-out WorkSection */}
+      <Gallery />
 
       {/* Contact Section */}
       <Footer />
