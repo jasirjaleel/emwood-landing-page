@@ -27,25 +27,25 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="font-display text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="services" className="py-32 bg-white">
+      <div className="container mx-auto px-8">
+        <h2 className="font-display text-4xl md:text-5xl font-light mb-16 animate-on-scroll opacity-0 text-center">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
           {services.map(({ title, image }, index) => (
             <div
               key={title}
-              className="group relative overflow-hidden aspect-square animate-on-scroll opacity-0"
+              className="group relative overflow-hidden aspect-square animate-on-scroll opacity-0 rounded-lg shadow-md"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img
                 src={image}
                 alt={title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/40 transition-opacity duration-300 group-hover:opacity-70" />
-              <div className="absolute bottom-0 left-0 p-6 text-white">
-                <h3 className="font-display text-xl font-light mb-2">{title}</h3>
+              <div className="absolute bottom-0 left-0 p-8 text-white">
+                <h3 className="font-display text-xl font-light mb-3">{title}</h3>
                 <ArrowRight className="transform transition-transform duration-300 group-hover:translate-x-2" />
               </div>
             </div>

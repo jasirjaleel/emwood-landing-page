@@ -26,22 +26,22 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="py-20 bg-neutral-cream">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-light mb-12 animate-on-scroll opacity-0">
+    <section id="process" className="py-32 bg-neutral-cream">
+      <div className="container mx-auto px-8">
+        <h2 className="text-4xl md:text-5xl font-light mb-20 animate-on-scroll opacity-0 text-center">
           Our Process
         </h2>
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-4xl mx-auto space-y-16">
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="flex gap-8 items-start animate-on-scroll opacity-0"
+              className="flex gap-10 items-start animate-on-scroll opacity-0"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <span className="text-4xl font-light text-brand-primary">0{index + 1}</span>
+              <span className="text-5xl font-light text-brand-primary">0{index + 1}</span>
               <div>
-                <h3 className="text-2xl font-light mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
+                <h3 className="text-2xl font-light mb-4">{step.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}
