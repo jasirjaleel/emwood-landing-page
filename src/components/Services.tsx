@@ -5,19 +5,19 @@ const Services = () => {
   const services = [
     {
       title: "Premium Wooden Flooring & Wall Paneling",
-      image: "public/photos/floor.jpg"
+      image: "/photos/floor.jpg"
     },
     {
       title: "Custom Wooden Interiors & Furniture",
-      image: "public/photos/wood_furniture_1.jpg"
+      image: "/photos/wood_furniture_1.jpg"
     },
     {
       title: "Bespoke Wooden Doors & Windows",
-      image: "public/photos/wood_door_1.jpg"
+      image: "/photos/wood_door_1.jpg"
     },
     {
       title: "Handcrafted Staircases & Railings",
-      image: "public/photos/wood_stairs_1.jpg"
+      image: "/photos/wood_stairs_1.jpg"
       
     },
     {

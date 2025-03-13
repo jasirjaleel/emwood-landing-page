@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -32,7 +31,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-3">
-            <img
+            {/* <img
               src="/lovable-uploads/2133a38d-e1e9-4eee-9ac2-c84f81e6bf03.png"
               alt="EMWOODS Logo Symbol"
               className={`h-10 transition-all duration-300 ${
@@ -43,6 +42,13 @@ const Navbar = () => {
               src="/lovable-uploads/68aeffa9-909e-4fd1-a586-b537999b4b88.png"
               alt="EMWOODS Logo Text"
               className={`h-8 transition-all duration-300 ${
+                isScrolled ? "brightness-100" : "brightness-0 invert"
+              }`}
+            /> */}
+            <img
+              src="/photos/Logo-brwn_hori.png"
+              alt="EMWOODS Logo"
+              className={` transition-all duration-300  h-10 ${
                 isScrolled ? "brightness-100" : "brightness-0 invert"
               }`}
             />
