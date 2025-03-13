@@ -5,7 +5,7 @@ const Services = () => {
   const services = [
     {
       title: "Premium Wooden Flooring & Wall Paneling",
-      image: "/photos/floor.jpg"
+      image: "/photos/wood_flooring_1.jpg"
     },
     {
       title: "Custom Wooden Interiors & Furniture",
