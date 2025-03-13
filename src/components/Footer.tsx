@@ -59,12 +59,11 @@ const Footer = () => {
           {/* Logo and Copyright */}
           <div className="flex flex-col items-start">
             <div className="flex items-center space-x-3 mb-4">
-              
               <img
-              src="/photos/Logo-brwn_hori.png"
-              alt="EMWOODS Logo"
-              className="h-15 brightness-0 invert"
-            />
+                src="/photos/Logo-brwn_hori.png"
+                alt="EMWOODS Logo"
+                className="h-15 brightness-0 invert"
+              />
             </div>
             <p className="text-gray-400 text-sm">
               © {new Date().getFullYear()} EMWOODS. All rights reserved.
