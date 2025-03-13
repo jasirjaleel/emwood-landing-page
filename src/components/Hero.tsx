@@ -18,10 +18,10 @@ const Hero = () => {
       <div className="relative z-10 h-screen flex items-center">
         <div className="container mx-auto px-8">
           <h1 className="font-display text-6xl md:text-8xl font-light text-white mb-8 animate-fade-up max-w-4xl">
-            Contemporary Living Spaces
+          Crafting Timeless Wooden Spaces
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl animate-fade-up font-light" style={{ animationDelay: "0.2s" }}>
-            At EMWOODS, we turn your dreams into reality. From the initial spark of inspiration to the final touches that bring your space to life.
+          <p className="text-xl text-white/95 max-w-2xl animate-fade-up font-light" style={{ animationDelay: "0.2s" }}>
+          At EMWOODS, we bring your vision to life with bespoke wooden interiors, premium furniture, and exquisite craftsmanship.
           </p>
         </div>
       </div>

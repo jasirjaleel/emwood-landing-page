@@ -19,7 +19,7 @@ const Navbar = () => {
     { name: "Process", href: "#process" },
     // { name: "Work", href: "#work" },
     { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contact", href: "https://wa.me/919562420359" },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
         isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-3">
             {/* <img
@@ -48,7 +48,7 @@ const Navbar = () => {
             <img
               src="/photos/Logo-brwn_hori.png"
               alt="EMWOODS Logo"
-              className={` transition-all duration-300  h-10 ${
+              className={` transition-all duration-300  h-14 ${
                 isScrolled ? "brightness-100" : "brightness-0 invert"
               }`}
             />

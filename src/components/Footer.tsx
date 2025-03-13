@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center space-x-4">
               <MapPin className="text-brand-primary" size={20} />
-              <span>Chentrappinni, Thrissur, Kerala, India</span>
+              <span>Tipu Sultan Road, Chentrappinni, Thrissur</span>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
               <img
               src="/photos/Logo-brwn_hori.png"
               alt="EMWOODS Logo"
-              className="h-15 brightness-0 invert"
+              className="h-14 brightness-0 invert"
             />
             </div>
             <p className="text-gray-400 text-sm">
