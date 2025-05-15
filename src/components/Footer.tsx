@@ -1,5 +1,4 @@
-
-import { MapPin, Instagram, Mail, Phone,Whatsapp  } from "lucide-react";
+import { MapPin, Instagram, Mail, Phone, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -57,7 +56,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-brand-primary transition-colors"
-                ><Whatsapp size={24} />
+                ><MessageCircle size={24} />
                 </a>
             </div>
           </div>

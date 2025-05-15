@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Hero = () => {
@@ -10,7 +9,6 @@ const Hero = () => {
           alt="Interior Design"
           className="w-full h-full object-cover"
           loading="eager"
-          fetchPriority="high"
           decoding="async"
         />
         <div className="absolute inset-0 bg-black/30" />
