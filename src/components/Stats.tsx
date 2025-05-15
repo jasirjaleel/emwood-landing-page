@@ -7,7 +7,7 @@ const Stats = () => {
       <div className="container mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-center max-w-5xl mx-auto">
           <div className="animate-on-scroll opacity-0 py-6">
-            <div className="text-6xl font-light mb-4 text-brand-primary">100+</div>
+            <div className="text-6xl font-light mb-4 text-brand-primary">1000+</div>
             <div className="text-gray-600 text-lg tracking-wide">Projects Completed</div>
           </div>
           <div className="animate-on-scroll opacity-0 py-6">

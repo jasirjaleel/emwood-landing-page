@@ -1,5 +1,5 @@
 
-import { MapPin, Instagram, Mail, Phone } from "lucide-react";
+import { MapPin, Instagram, Mail, Phone,Whatsapp  } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -30,6 +30,13 @@ const Footer = () => {
             <h3 className="text-2xl font-display font-light mb-6">Connect With Us</h3>
             <div className="flex space-x-6">
               <a 
+                href="tel:+919562420359"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-primary transition-colors"
+              ><Phone size={24} />
+              </a>
+              <a 
                 href="https://maps.google.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -45,14 +52,13 @@ const Footer = () => {
               >
                 <Instagram size={24} />
               </a>
-              <a 
-                href="https://wa.me/919562420359" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-brand-primary transition-colors"
-              >
-                <Phone size={24} />
-              </a>
+                <a 
+                  href="https://wa.me/919562420359"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-brand-primary transition-colors"
+                ><Whatsapp size={24} />
+                </a>
             </div>
           </div>
 

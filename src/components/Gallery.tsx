@@ -14,7 +14,16 @@ const Gallery = () => {
     "/lovable-uploads/8870a062-97fa-4658-859b-1f754f03d544.png",
     "/lovable-uploads/1145064b-4add-4936-b64d-8eb378622169.png",
     "/lovable-uploads/0d05f0e7-3597-45b2-a573-a3d955b33d55.png",
-    "/lovable-uploads/58fdada3-06c8-499c-bda2-c6ae1529c2fd.png"
+    "/lovable-uploads/58fdada3-06c8-499c-bda2-c6ae1529c2fd.png",
+    "/lovable-uploads/IMG-20250420-WA0018.jpg",
+    "/lovable-uploads/IMG-20250420-WA0019.jpg",
+    "/lovable-uploads/IMG-20250420-WA0020.jpg",
+    "/lovable-uploads/IMG-20250420-WA0023.jpg",
+    "/lovable-uploads/IMG-20250420-WA0024.jpg",
+    "/lovable-uploads/IMG-20250420-WA0025.jpg",
+    "/lovable-uploads/IMG-20250420-WA0026.jpg",
+    "/lovable-uploads/IMG-20250420-WA0027.jpg",
+
   ];
 
   const openLightbox = (index: number) => {
